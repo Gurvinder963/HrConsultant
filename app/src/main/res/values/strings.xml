@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name"/>
+    <string name="settings">Settings</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">Logout</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Open</string>
+    <string name="ok">Ok</string>
+    <string name="rational_message_location">We need location permission to access the current location and on that basis we have to fetch city and display results.</string>
+</resources>

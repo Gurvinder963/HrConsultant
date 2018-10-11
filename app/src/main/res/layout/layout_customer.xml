@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:text="Companies"
+        android:textColor="#000"
+        android:textSize="@dimen/textSize16" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:id="@+id/llHeadingsfamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_1dp"
+            android:background="#456745"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            >
+
+
+
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:text="Customer Name"
+                android:textColor="#fff"
+                android:textSize="@dimen/textSize16" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:text="Customer Address"
+                android:textColor="#fff"
+                android:textSize="@dimen/textSize16" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:text="Contact"
+                android:textColor="#fff"
+                android:textSize="@dimen/textSize16" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMembers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@id/llMain"
+        android:nestedScrollingEnabled="false"></android.support.v7.widget.RecyclerView>
+
+
+
+    <TextView
+        android:id="@+id/tvNoDataFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/textSize16"
+        android:visibility="gone"
+        android:text="Data Not Found"
+        />
+
+
+</RelativeLayout>

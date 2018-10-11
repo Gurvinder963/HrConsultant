@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@drawable/icon_7"
+            android:title="Task"
+            android:checked="true"
+            />
+
+        <item
+            android:id="@+id/menu_add_patient"
+            android:icon="@drawable/ic_family"
+            android:title="Form"/>
+
+
+        <item
+            android:id="@+id/menu_search_patient"
+            android:icon="@drawable/ic_member"
+            android:title="Report" />
+
+
+        <item
+            android:id="@+id/menu_logOut"
+            android:icon="@drawable/ic_logout1"
+            android:title="Logout" />
+
+    </group>
+
+
+</menu>

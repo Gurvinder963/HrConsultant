@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/border_edittext"
+        android:fontFamily="monospace"
+        android:hint="Date"
+        android:imeOptions="actionNext"
+
+
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColorHint="#000" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/etInTime"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:layout_marginStart="@dimen/margin_8dp"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:background="@drawable/border_edittext"
+            android:fontFamily="monospace"
+            android:hint="In-Time"
+            android:imeOptions="actionNext"
+
+
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColorHint="#000" />
+
+        <TextView
+            android:id="@+id/etOutTime"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="@dimen/margin_8dp"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:layout_toRightOf="@+id/etInTime"
+            android:background="@drawable/border_edittext"
+            android:fontFamily="monospace"
+            android:hint="Out-Time"
+            android:imeOptions="actionNext"
+
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColorHint="#000" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvQuestion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/radioAnswer1"
+                android:fontFamily="monospace"
+                android:text="1. Shirt"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/rgShirt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbCancelShirt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/cancel_selector"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbCheckShirt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/check_selector"
+                    android:gravity="center" />
+
+            </RadioGroup>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvQuestion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/radioAnswer1"
+                android:fontFamily="monospace"
+                android:text="2. Belt"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/rgBelt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbCancelBelt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/cancel_selector"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbCheckBelt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/check_selector"
+                    android:gravity="center" />
+
+            </RadioGroup>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvQuestion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/radioAnswer1"
+                android:fontFamily="monospace"
+                android:text="3. Pant"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/rgPant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbCancelPant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/cancel_selector"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbCheckPant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/check_selector"
+                    android:gravity="center" />
+
+            </RadioGroup>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvQuestion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/radioAnswer1"
+                android:fontFamily="monospace"
+                android:text="4. Cap"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/rgCap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbCancelCap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/cancel_selector"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbCheckCap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/check_selector"
+                    android:gravity="center" />
+
+            </RadioGroup>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvQuestion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/radioAnswer1"
+                android:fontFamily="monospace"
+                android:text="5. Tie"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/rgTie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbCancelTie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/cancel_selector"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbCheckTie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/check_selector"
+                    android:gravity="center" />
+
+            </RadioGroup>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvQuestion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/radioAnswer1"
+                android:fontFamily="monospace"
+                android:text="6. Shave"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/rgShave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbCancelShave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/cancel_selector"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbCheckShave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/check_selector"
+                    android:gravity="center" />
+
+            </RadioGroup>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvQuestion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/radioAnswer1"
+                android:fontFamily="monospace"
+                android:text="7. Shoe"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/rgShoe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbCancelShoe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/cancel_selector"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbCheckShoe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/check_selector"
+                    android:gravity="center" />
+
+            </RadioGroup>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvQuestion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/radioAnswer1"
+                android:fontFamily="monospace"
+                android:text="8. Hair"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/rgHair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbCancelHair"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/cancel_selector"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbCheckHair"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/check_selector"
+                    android:gravity="center" />
+
+            </RadioGroup>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <EditText
+        android:id="@+id/edFine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Fine"
+        android:padding="@dimen/margin_8dp"
+        android:inputType="number"
+        android:background="@drawable/border_edittext"
+        />
+
+<EditText
+    android:id="@+id/edRemark"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="20dp"
+    android:hint="Remark"
+    android:background="@drawable/border_edittext"
+    />
+    <ImageView
+        android:id="@+id/ivCapture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <Button
+        android:id="@+id/btnAddImage"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:text="Choose file"
+
+        android:textColor="#fff"
+        android:textSize="@dimen/textSize16" />
+
+    <Button
+        android:id="@+id/btnSaveData"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:text="Save"
+         android:layout_marginBottom="20dp"
+        android:textColor="#fff"
+        android:textSize="@dimen/textSize16" />
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>
